@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #202020;
+    background-color: #ffeba0;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,8 @@ header h1 {
 }
 
 .navbar {
-    background-color: transparent;
+    width: auto;
+    height: 100px;
 }
 
 .nav-item a {
@@ -34,30 +35,30 @@ header h1 {
 }
 
 .cart {
-    padding: 7px 25px;
+    padding: 10px;
     background-color: transparent;
-    border: 2px solid #fd9d3e;
     border-radius: 7px;
-    margin-left: auto;
     position: relative;
-    top: -10px;
-    transition: .3s ease;
+    left: 320%;
+    top: 6px;
     text-align: center;
+    color: #202020;
+    background-color: #fd9d3e;
+}
+
+.cart svg {
+    fill: #f2f2f2;
 }
 
 .nav-item svg {
     margin: auto 10px;
 }
 
-.cart:hover {
-    background-color: #fd9d3e;
-    color: #f2f2f2;
-    border: 2px solid #fd9d3e;
-}
-
 .container1 {
-    height: 90vh;
+    height: 87vh;
     width: 100%;
+    background-color: 	#ffeba0;
+    margin: 0 0 -40px;
 }
 
 .carousel-item svg {
@@ -65,7 +66,7 @@ header h1 {
     position: absolute;
     z-index: 0;
     height: 100%;
-    top: 100px;
+    top: 105px;
 }
 
 .pizza {
@@ -83,23 +84,24 @@ header h1 {
 }
 
 .pizza-name p {
-    color: #f2f2f2;
+    color: #202020;
     font-size: 80px;
     text-transform: uppercase;
 }
 
 .add-cart span {
-    color: #f2f2f2;
+    color: #202020;
 }
 
 .add-cart button {
     text-transform: capitalize;
     background-color: #fd9d3e;
     color: #f2f2f2;
+    border: none;
 }
 
 .description {
-    color: #f2f2f2;
+    color: #202020;
     position: relative;
     top: 300px;
 }
@@ -110,6 +112,45 @@ header h1 {
 }
 
 .container2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #fd9d3e;
+    margin: -30px 0;
+}
+
+.header-dining {
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 100px;
+    font-family: cursive;
+    margin: 50px auto ;
+}
+
+.dine-in, .deliver, .pick-up {
+    width: 350px;
+    height: 400px;
+    background-color: #ffeba0;
+    color: #8c2617;
+    text-align: center;
+    margin: 250px auto;
+    box-shadow: 7px 7px #f2f2f2;
+}
+
+.dine-in h1, .deliver h1, .pick-up h1 {
+    font-family: alex brush;
+}
+
+.dine-in p, .deliver p, .pick-up p {
+    font-family: poppins;
+}
+
+.dine-in svg, .deliver svg, .pick-up svg {
+    width: 50px;
+    height: 50px;
+    fill: #8c2617;
+}
+
+.container3 {
     width: 80%;
     height: 90vh;
     background-color: #f2f2f2;
@@ -155,12 +196,6 @@ header h1 {
     height: 30px;
 }
 
-.container3 {
-    width: 100%;
-    height: 100vh;
-    background-color: #202020;
-}
-
 footer {
     width: 100%;
     height: 40vh;
@@ -168,17 +203,17 @@ footer {
 
 footer h1 {
     font-size: 60px;
-    color: #fd9d3e;
+    color: #8c2617;
 }
 
 footer svg {
-    fill: #fd9d3e;
+    fill: #8c2617;
     width: 15px;
     height: 25px;
 }
 
 footer p {
-    color: #f2f2f2;
+    color: #8c2617;
 }
 
 .container-contacts img{
@@ -219,7 +254,7 @@ footer p {
 }
 
 main {
-    background-color: #202020;
+    margin: 0 0 -30px;
 }
 
 .form {
