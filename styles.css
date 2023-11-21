@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #ffeba0;
+    background-color: #202020;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ header h1 {
 .nav-item a {
     margin: 10px 20px;
     font-size: 17px;
-    color: #f2f2f2;
+    color: #202020;
 }
 
 .nav-item {
@@ -42,22 +42,59 @@ header h1 {
     left: 320%;
     top: 6px;
     text-align: center;
-    color: #202020;
-    background-color: #fd9d3e;
+    background-color: #ffeba0;
 }
 
 .cart svg {
-    fill: #f2f2f2;
+    fill: #202020;
 }
 
 .nav-item svg {
     margin: auto 10px;
 }
 
-.container1 {
-    height: 87vh;
+.container-main {
     width: 100%;
-    background-color: 	#ffeba0;
+    height: 90vh;
+    overflow: hidden;
+    color: #ffeba0;
+}
+
+.container-text {
+    width: 40%;
+    position: relative;
+    top: 130px;
+    left: 150px;
+}
+
+.container-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.circle {
+    position: absolute;
+    width: 600px;
+    height: 80%;
+    background-color: #ffeba0;
+    left: 800px;
+    top: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container-main img {
+    position: relative;
+    left: 130px;
+    top: 50px;
+    height: 100%;
+   z-index: 1;
+}
+
+.container1 {
+    height: 100vh;
+    width: 100%;
+    background-color: 	#202020;
     margin: 0 0 -40px;
 }
 
@@ -66,31 +103,32 @@ header h1 {
     position: absolute;
     z-index: 0;
     height: 100%;
-    top: 105px;
+    top: 205px;
+    fill: #ffeba0;
 }
 
 .pizza {
     position: relative;
-    top: -30px;
+    top: 30px;
     left: 50px;
     z-index: 1;
 }
 
 .pizza-name {
     position: relative;
-    top: 100px;
+    top: 200px;
     left: 100px;
     line-height: 1;
 }
 
 .pizza-name p {
-    color: #202020;
+    color: #ffeba0;
     font-size: 80px;
     text-transform: uppercase;
 }
 
 .add-cart span {
-    color: #202020;
+    color: #ffeba0;
 }
 
 .add-cart button {
@@ -101,9 +139,9 @@ header h1 {
 }
 
 .description {
-    color: #202020;
+    color: #ffeba0;
     position: relative;
-    top: 300px;
+    top: 400px;
 }
 
 .description h5 {
@@ -114,13 +152,13 @@ header h1 {
 .container2 {
     width: 100%;
     height: 100vh;
-    background-color: #fd9d3e;
+    background-color: #ffeba0;
     margin: -30px 0;
 }
 
 .header-dining {
     position: absolute;
-    color: #f2f2f2;
+    color: #202020;
     font-size: 100px;
     font-family: cursive;
     margin: 50px auto ;
@@ -129,11 +167,12 @@ header h1 {
 .dine-in, .deliver, .pick-up {
     width: 350px;
     height: 400px;
-    background-color: #ffeba0;
-    color: #8c2617;
+    background-color: #8c2617;
+    color: #f2f2f2;
     text-align: center;
     margin: 250px auto;
-    box-shadow: 7px 7px #f2f2f2;
+    box-shadow: 7px 7px #202020;
+    border: 5px solid #202020;
 }
 
 .dine-in h1, .deliver h1, .pick-up h1 {
@@ -147,55 +186,8 @@ header h1 {
 .dine-in svg, .deliver svg, .pick-up svg {
     width: 50px;
     height: 50px;
-    fill: #8c2617;
+    fill: #f2f2f2;
 }
-
-.container3 {
-    width: 80%;
-    height: 90vh;
-    background-color: #f2f2f2;
-}
-
-#pizza-making {
-    border-radius: 0 10px 10px 0;
-}
-
-.video-text h1 {
-    font-size: 50px;
-    font-family: alex brush;
-    color: #fd9d3e;
-    margin: 50px 330px;
-}
-
-.video-text p {
-    position: relative;
-    font-size: 100px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: -20px auto;
-    line-height: 100px;
-    font-weight: 500;
-}
-
-.video-text button {
-    display: block;
-    margin: 40px auto 5px;
-    transition: .3s ease-in;
-    border: 2px solid #fd9d3e;
-}
-
-.video-text button:hover {
-    background-color: #fd9d3e;
-    color: #f2f2f2;
-    border: none;
-    transform: scale(1.2);
-}
-
-.video-container svg {
-    width: 30px;
-    height: 30px;
-}
-
 footer {
     width: 100%;
     height: 40vh;
@@ -203,17 +195,17 @@ footer {
 
 footer h1 {
     font-size: 60px;
-    color: #8c2617;
+    color: #ffeba0;
 }
 
 footer svg {
-    fill: #8c2617;
+    fill: #ffeba0;
     width: 15px;
     height: 25px;
 }
 
 footer p {
-    color: #8c2617;
+    color: #ffeba0;
 }
 
 .container-contacts img{
@@ -331,4 +323,101 @@ main {
     color: #fd9d3e;
     cursor: pointer;
 }
+
+.header-container {
+    margin: 10px auto;
+    text-align: center;
+    background-color: #8c2617;
+    color: #f2f2f2;
+    padding: 30px 0;
+}
+
+.header-container h1 {
+    font-size: 70px;
+}
+
+.pizza-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffeba0;
+    overflow: hidden;
+    margin: -10px 0;
+}
+
+.pizza-container h1 {
+    font-size: 70px;
+    padding: 20px 50px 50px 150px;
+    margin: 10px auto;
+}
+
+.pizza-container p{
+    padding: 0 150px;
+}
+
+.pizza-container img {
+    height: 900px;
+    position: relative;
+    top: -180px;
+    left: 150px;
+}
+
+.pizza-header {
+    position: relative;
+    background-color: #8c2617;
+    color: #ffeba0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    left: 20px;
+    width: 90px;
+}
+
+.pizza-text {
+    margin: 10px -55px 0 -100px;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+
+.pasta-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffeba0;
+    overflow: hidden;
+    margin: -10px 0;
+}
+
+.pasta-container h1 {
+    font-size: 70px;
+    padding: 20px 50px 50px 150px;
+    margin: 20px auto;
+}
+
+.pasta-container p{
+    padding: 0 150px;
+}
+
+.pasta-container img {
+    height: 900px;
+    position: relative;
+    top: -100px;
+    left: -200px;
+}
+
+.pasta-header {
+    position: relative;
+    background-color: #8c2617;
+    color: #ffeba0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    right: 20px;
+    width: 90px;
+}
+
+.pasta-text {
+    margin: 10px -55px 0 -100px;
+    position: relative;
+    top: 70px;
+}
+
+
   
