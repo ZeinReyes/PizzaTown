@@ -246,120 +246,97 @@ footer p {
     color: #ffeba0;
 }
 
-.container-contacts img{
-    width: 100%;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+.container-contacts {
+    background-color: #ffeba0;
+    width: 80%;
+    height: 80vh;
+    margin: 20px auto;
+    border-radius: 20px;
 }
 
-.container-contacts h1 {
-    font-size: 90px;
-    color: #fd9d3e;
-    font-family: alex brush;
+.video-container {
     position: relative;
-    text-align: center;
-    top: -300px;
+    width: 640px; /* Set the desired width */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Hide overflow content (if any) */
 }
 
-.container-contacts p {
-    color: #f2f2f2;
-    font-size: 50px;
-    position: relative;
-    top: -280px;
-    text-align: center;
+video {
+    width: 70%;
+    border-radius: 10px 0 0 10px;
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 86.6px solid #8c2617; /* Adjust the color as needed */
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
+.contact-form {
+    background-color: #8c2617;
+    width: 65%;
+    height: 80vh;
+    margin: 0 0 0 -200px;
+    border-radius: 0 20px 20px 0;
 }
 
-main {
-    margin: 0 0 -30px;
+.contact-form h1 {
+    color: #ffeba0;
+    margin: 50px 0 15px 50px;
+    font-size: 60px;
 }
 
-.form {
-    --input-focus: #f2f2f2;
-    --font-color: #f2f2f2;
-    --font-color-sub: #fd9d3e;
-    --bg-color: beige;
-    --main-color: #f2f2f2;
-    padding: 20px;
-    background: #8c2617;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: fit-content;
+.contact-form input {
+    height: 40px;
     width: 45vw;
-    position: relative;
-    top: -190px;
-    margin: 0 auto -160px;
-    border-radius: 5px;
-    box-shadow: 4px 4px #ffeba0;
+    border-radius: 10px; 
+    border: none;
+    box-shadow: 5px 5px #ffeba0;
+    caret-color: #8c2617;
+    text-indent: 10px;
 }
 
-.title {
-    color: var(--font-color);
-    font-weight: 900;
-    font-size: 50px;
-    margin: 25px auto;
+.contact-form textarea {
+    height: 100px;
+    width: 45vw;
+    border-radius: 10px; 
+    border: none;
+    resize: none;
+    box-shadow: 5px 5px #ffeba0;
+    text-indent: 10px;
+    padding: 5px 0;
 }
 
-.input {
-    width: 350px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid #202020;
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px #202020;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--font-color);
+.contact-form input::placeholder, textarea::placeholder {
     padding: 5px 10px;
-    outline: none;
 }
 
-.input::placeholder {
-    color: var(--font-color-sub);
-    opacity: 0.8;
-}
-
-.input:focus {
-    border: 2px solid var(--input-focus);
-}
-
-.message {
-    height: 60px;
-}
-
-.button-log:active, .button-confirm:active {
-    box-shadow: 0px 0px var(--main-color);
-    transform: translate(3px, 3px);
-}
-
-.button-confirm {
-    margin: 10px auto 0;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid #202020;
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px #202020;
-    font-size: 17px;
-    font-weight: 600;
-    color: #fd9d3e;
+.contact-form button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid #ffeba0;
     cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    margin: 10px 300px;
+}
+
+.contact-form button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeba0;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.contact-form button:hover::before {
+    transform: translateX(0);
 }
 
 .header-container {
